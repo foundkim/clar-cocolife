@@ -1,5 +1,5 @@
-import { Avatar, Card, CardContent, Grid, Typography } from "@mui/material";
-import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import { Card, CardContent, Grid, Typography } from "@mui/material";
+
 
 export const Stat2 = (props) => (
   <Card {...props}>

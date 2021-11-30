@@ -14,9 +14,11 @@ import Alerts from "./layout/Alerts";
 
 function App() {
   const dispatch = useDispatch();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     dispatch(getLocations());
-  }, []);
+  }, );
   return (
     <Router>
       <Alerts />

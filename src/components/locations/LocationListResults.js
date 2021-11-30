@@ -20,7 +20,6 @@ import { deleteLocation } from "../../actions/locations";
 export const LocationListResults = ({
   locations,
   handleView,
-  deleteLocation,
   ...rest
 }) => {
 

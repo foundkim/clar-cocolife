@@ -61,7 +61,6 @@ export const DashboardSidebar = (props) => {
         <div>
           <Box sx={{ p: 3 }}>
             <Link to="/">
-              <a>
                 <img
                   className="logo"
                   height="50px"
@@ -69,7 +68,6 @@ export const DashboardSidebar = (props) => {
                   src="https://zoneemploi.com/wp-content/uploads/2019/08/CARE-INTERNATIONAL2.jpg"
                   alt=""
                 />
-              </a>
             </Link>
           </Box>
           <Box sx={{ px: 2 }}>

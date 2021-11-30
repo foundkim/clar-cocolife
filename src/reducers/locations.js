@@ -10,7 +10,7 @@ const initialState = {
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default function (state = initialState, action) {
+export default function locations(state = initialState, action) {
   switch (action.type) {
     case GET_LOCATIONS:
       return {
@@ -36,7 +36,6 @@ export default function (state = initialState, action) {
           ...state.locations.filter(
             (location) => location.id !== action.payload.id
           ),
-          ,
           action.payload,
         ],
       };

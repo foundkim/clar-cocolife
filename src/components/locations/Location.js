@@ -1,19 +1,15 @@
-import { useState, useReducer, useEffect } from "react";
+import { useState, useReducer } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useAlert, withAlert } from "react-alert";
-import axios from "axios";
+// import { useAlert, withAlert } from "react-alert";
+// import axios from "axios";
 import { Box, Container } from "@mui/material";
 import { LocationListResults } from "./LocationListResults";
 import { LocationListToolbar } from "./LocationListToolbar";
 import { LocationFormModal } from "./LocationFormModal";
 import {
-  getLocations,
   addLocation,
   updateLocation,
-  deleteLocation,
 } from "../../actions/locations";
-
-const baseURL = "http://127.0.0.1:8000";
 
 const Locations = ({ alert }) => {
   const dispatch = useDispatch();
@@ -159,7 +155,6 @@ const Locations = ({ alert }) => {
             <LocationListResults
               locations={displayedLocations}
               handleView={handleView}
-              deleteLocation={deleteLocation}
             />
           </Box>
           <LocationFormModal

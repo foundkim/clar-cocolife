@@ -1,9 +1,8 @@
 import { Box, Container, Grid } from "@mui/material";
-import { DataFrame } from "pandas-js";
 import { Stat1 } from "./stat1";
-import { Stat2 } from "./stat2";
-import { Stat3 } from "./stat3";
-import { Stat4 } from "./stat4";
+// import { Stat2 } from "./stat2";
+// import { Stat3 } from "./stat3";
+// import { Stat4 } from "./stat4";
 import { Stat5 } from "./stat5";
 import { Sales } from "./sales";
 import { useSelector } from "react-redux";
