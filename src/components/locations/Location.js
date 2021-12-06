@@ -6,10 +6,7 @@ import { Box, Container } from "@mui/material";
 import { LocationListResults } from "./LocationListResults";
 import { LocationListToolbar } from "./LocationListToolbar";
 import { LocationFormModal } from "./LocationFormModal";
-import {
-  addLocation,
-  updateLocation,
-} from "../../actions/locations";
+import { addLocation, updateLocation } from "../../actions/locations";
 
 const Locations = ({ alert }) => {
   const dispatch = useDispatch();
@@ -134,7 +131,9 @@ const Locations = ({ alert }) => {
         )
       : locations;
   };
-
+  // useEffect(() => {
+  //   dispatch(getLocations())
+  // }, [])
   const displayedLocations = dynamicSearch(locations);
   return (
     <>

@@ -3,6 +3,7 @@ import {
   DELETE_LOCATION,
   ADD_LOCATION,
   UPDATE_LOCATION,
+  CLEAR_LOCATIONS
 } from "../actions/types.js";
 
 const initialState = {
@@ -38,6 +39,11 @@ export default function locations(state = initialState, action) {
           ),
           action.payload,
         ],
+      };
+    case CLEAR_LOCATIONS:
+      return {
+        ...state,
+        locations: [],
       };
     default:
       return state;
